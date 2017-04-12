@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: jacquez.info/sitemap.xml 
+Sitemap: http://joeljacquez.mx/sitemap.xml 

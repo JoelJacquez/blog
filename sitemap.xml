@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>jacquez.info/blog/2017/04/06/configuracion-de-ssh-para-conexiones-remotas/</loc>
+<loc>http://joeljacquez.mx/blog/2017/04/06/configuracion-de-ssh-para-conexiones-remotas/</loc>
 <lastmod>2017-04-06T02:51:30-06:00</lastmod>
 </url>
 <url>
-<loc>jacquez.info/blog/archives/</loc>
+<loc>http://joeljacquez.mx/blog/archives/</loc>
 </url>
 <url>
-<loc>jacquez.info/</loc>
+<loc>http://joeljacquez.mx/</loc>
 </url>
 <url>
-<loc>jacquez.info/blog/categories/servidores/</loc>
+<loc>http://joeljacquez.mx/blog/categories/servidores/</loc>
 </url>
 <url>
-<loc>jacquez.info/blog/categories/linux/</loc>
+<loc>http://joeljacquez.mx/blog/categories/linux/</loc>
 </url>
 <url>
-<loc>jacquez.info/blog/categories/ssh/</loc>
+<loc>http://joeljacquez.mx/blog/categories/ssh/</loc>
 </url>
 </urlset>

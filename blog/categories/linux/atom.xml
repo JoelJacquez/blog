@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Categoría: Linux | Joel Jacquez]]></title>
-  <link href="jacquez.info/blog/categories/linux/atom.xml" rel="self"/>
-  <link href="jacquez.info/"/>
-  <updated>2017-04-12T10:42:18-06:00</updated>
-  <id>jacquez.info/</id>
+  <link href="http://joeljacquez.mx/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://joeljacquez.mx/"/>
+  <updated>2017-04-12T10:53:43-06:00</updated>
+  <id>http://joeljacquez.mx/</id>
   <author>
     <name><![CDATA[Joel Jacquez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Configuración De SSH Para Conexiones Remotas]]></title>
-    <link href="jacquez.info/blog/2017/04/06/configuracion-de-ssh-para-conexiones-remotas/"/>
+    <link href="http://joeljacquez.mx/blog/2017/04/06/configuracion-de-ssh-para-conexiones-remotas/"/>
     <updated>2017-04-06T02:51:30-06:00</updated>
-    <id>jacquez.info/blog/2017/04/06/configuracion-de-ssh-para-conexiones-remotas</id>
+    <id>http://joeljacquez.mx/blog/2017/04/06/configuracion-de-ssh-para-conexiones-remotas</id>
     <content type="html"><![CDATA[<p>En este punto ya debemos de tener instalado <strong>ssh</strong> en nuestro servidor.</p>
 
 <h2>Paso 1 Iniciar con usuario root</h2>
