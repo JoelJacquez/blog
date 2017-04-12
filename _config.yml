@@ -13,7 +13,9 @@ description:
 # You can customize the format as defined in
 # http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime
 # Additionally, %o will give you the ordinal representation of the day
-date_format: "ordinal"
+# date_format: "%a %e %b %Y"
+# date_format: "%D"
+date_format: "%F"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss: /atom.xml
@@ -33,6 +35,7 @@ destination: public
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
+category_title_prefix: "Categoría: "
 markdown: rdiscount
 rdiscount:
   extensions:
@@ -44,7 +47,7 @@ highlighter: pygments # default python pygments have been replaced by pygments.r
 paginate: 10          # Posts per page on the blog index
 paginate_path: "posts/:num"  # Directory base for pagination URLs eg. /posts/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
-excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
+excerpt_link: "Continuar leyendo &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 excerpt_separator: "<!--more-->"
 
 titlecase: true       # Converts page and post titles to titlecase
@@ -99,3 +102,6 @@ google_analytics_tracking_id:
 
 # Facebook Like
 facebook_like: false
+
+# Gravatar hash
+gravatar_hash: e55ffb0295826fe4fe923b7692d6ce7b
