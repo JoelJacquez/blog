@@ -20,15 +20,15 @@ location: index
 
     <ul class="pager">
       {% if paginator.next_page %}
-        <li class="previous"><a href="{{paginator.next_page_path}}">&larr;&nbsp;Older</a></li>
+        <li class="previous"><a href="{{paginator.next_page_path}}">&larr;&nbsp; Entradas antiguas</a></li>
       {% else %}
-        <li class="previous disabled"><a href="#">&larr;&nbsp;Older</a></li>
+        <li class="previous disabled"><a href="#">&larr;&nbsp; Entradas antiguas</a></li>
       {% endif %}
-      <li><a href="/blog/archives">Blog Archives</a></li>
+      <li><a href="/blog/archives">Listado de entradas</a></li>
       {% if paginator.previous_page %}
-        <li class="next"><a href="{{paginator.previous_page_path}}">Newer&nbsp;&rarr;</a></li>
+        <li class="next"><a href="{{paginator.previous_page_path}}">Entradas más recientes &nbsp;&rarr;</a></li>
       {% else %}
-        <li class="next disabled"><a href="#">Newer&nbsp;&rarr;</a></li>
+        <li class="next disabled"><a href="#">Entradas más recientes &nbsp;&rarr;</a></li>
       {% endif %}
     </ul>
   </div>
