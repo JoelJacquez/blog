@@ -20,31 +20,31 @@ single: true
         {% if page.previous.url or page.next.url %}
           <div class="pager">
             {% if page.previous.url %}
-            
-              
-                <a href="{{page.previous.url}}" class="col-xs-12 col-md-4 btn btn-default" title="Previous Post: {{page.previous.title}}"> 
+
+
+                <a href="{{page.previous.url}}" class="col-xs-12 col-md-4 btn btn-default" title="Previous Post: {{page.previous.title}}">
                   <div class="text-muted">
-                    <small>Previous Post</small>
+                    <small>Post Anterior</small>
                   </div>
                   <div class="pager-title">
                     <h4>{{page.previous.title}}</h4>
                   </div>
                 </a>
-              
-            
+
+
             {% endif %}
             {% if page.next.url %}
-              
+
               <a href="{{page.next.url}}" class="col-xs-12 col-md-4 btn btn-default pull-right" title="Next Post: {{page.next.title}}">
                 <div class="text-muted">
-                  <small>Next Post</small>
+                  <small>Siguiente Post</small>
                 </div>
                 <div class="pager-title">
                   <h4>{{page.next.title}}</h4>
                 </div>
               </a>
-              
-            
+
+
             {% endif %}
           </div>
         {% endif %}
@@ -52,7 +52,7 @@ single: true
     </article>
     {% if site.disqus_short_name and page.comments == true %}
       <section>
-        <h2>Comments</h2>
+        <h2>Comentarios</h2>
         <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
       </section>
     {% endif %}
