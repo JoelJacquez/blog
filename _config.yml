@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: jacquez.info
+url: http://jacquez.info
 title: Joel Jacquez
 subtitle: Software engineer, geek and coffe lover ❤️
 author: Joel Jacquez
@@ -94,7 +94,7 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
+disqus_short_name: jacquez
 disqus_show_comment_count: false
 
 # Google Analytics
