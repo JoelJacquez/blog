@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://jacquez.info/blog/2017/06/30/instalar-node-en-raspberry-pi/</loc>
+<lastmod>2017-06-30T01:02:01-06:00</lastmod>
+</url>
+<url>
 <loc>http://jacquez.info/blog/2017/04/06/configuracion-de-ssh-para-conexiones-remotas/</loc>
 <lastmod>2017-04-06T02:51:30-06:00</lastmod>
 </url>
@@ -18,5 +22,14 @@
 </url>
 <url>
 <loc>http://jacquez.info/blog/categories/ssh/</loc>
+</url>
+<url>
+<loc>http://jacquez.info/blog/categories/nodejs/</loc>
+</url>
+<url>
+<loc>http://jacquez.info/blog/categories/raspberry/</loc>
+</url>
+<url>
+<loc>http://jacquez.info/blog/categories/raspbian/</loc>
 </url>
 </urlset>
