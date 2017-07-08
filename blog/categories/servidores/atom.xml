@@ -4,7 +4,7 @@
   <title><![CDATA[Categoría: Servidores | Joel Jacquez]]></title>
   <link href="http://jacquez.info/blog/categories/servidores/atom.xml" rel="self"/>
   <link href="http://jacquez.info/"/>
-  <updated>2017-07-03T12:59:49-06:00</updated>
+  <updated>2017-07-07T18:59:11-05:00</updated>
   <id>http://jacquez.info/</id>
   <author>
     <name><![CDATA[Joel Jacquez]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Configuración De SSH Para Conexiones Remotas]]></title>
     <link href="http://jacquez.info/blog/2017/04/06/configuracion-de-ssh-para-conexiones-remotas/"/>
-    <updated>2017-04-06T02:51:30-06:00</updated>
+    <updated>2017-04-06T03:51:30-05:00</updated>
     <id>http://jacquez.info/blog/2017/04/06/configuracion-de-ssh-para-conexiones-remotas</id>
     <content type="html"><![CDATA[<p>En este punto ya debemos de tener instalado <strong>ssh</strong> en nuestro servidor.</p>
 

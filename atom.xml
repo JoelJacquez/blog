@@ -4,7 +4,7 @@
   <title><![CDATA[Joel Jacquez]]></title>
   <link href="http://jacquez.info/atom.xml" rel="self"/>
   <link href="http://jacquez.info/"/>
-  <updated>2017-07-03T12:59:49-06:00</updated>
+  <updated>2017-07-07T18:59:11-05:00</updated>
   <id>http://jacquez.info/</id>
   <author>
     <name><![CDATA[Joel Jacquez]]></name>
@@ -14,9 +14,86 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Funciones Prácticas Con Fechas]]></title>
+    <link href="http://jacquez.info/blog/2017/07/07/funciones-practicas-con-fechas/"/>
+    <updated>2017-07-07T17:26:45-05:00</updated>
+    <id>http://jacquez.info/blog/2017/07/07/funciones-practicas-con-fechas</id>
+    <content type="html"><![CDATA[<p>Hola en este post les mostraré un par de funciones en <em>JavaScript</em> que uso con frecuencia para el manejo de fechas.</p>
+
+<h4>Fecha con formato</h4>
+
+<p>La primera función es para regresar una fecha con formato de  <code>dd-mm-yyyy</code> (<em>día-mes-año</em>), esta función recibe como parámetro un objeto de tipo <em>Date</em> y regresa un string con la fecha formateada.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">function</span> <span class="nx">fechaConFormato</span><span class="p">(</span><span class="nx">fecha</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">dd</span> <span class="o">=</span> <span class="nx">fecha</span><span class="p">.</span><span class="nx">getDate</span><span class="p">();</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">mm</span> <span class="o">=</span> <span class="nx">fecha</span><span class="p">.</span><span class="nx">getMonth</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">yy</span> <span class="o">=</span> <span class="nx">fecha</span><span class="p">.</span><span class="nx">getFullYear</span><span class="p">();</span>
+</span><span class='line'>  <span class="k">return</span> <span class="p">(</span><span class="nx">dd</span><span class="o">&gt;</span><span class="mi">9</span><span class="o">?</span> <span class="nx">dd</span><span class="o">:</span><span class="s1">&#39;0&#39;</span><span class="o">+</span><span class="nx">dd</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;-&#39;</span><span class="o">+</span><span class="p">(</span><span class="nx">mm</span><span class="o">&gt;</span><span class="mi">9</span><span class="o">?</span> <span class="nx">mm</span><span class="o">:</span><span class="s1">&#39;0&#39;</span><span class="o">+</span><span class="nx">mm</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;-&#39;</span><span class="o">+</span><span class="nx">yy</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>La forma de usar esta función sería de la siguiente forma:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">miFecha</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">fecha</span> <span class="o">=</span> <span class="nx">fechaConFormato</span><span class="p">(</span><span class="nx">miFecha</span><span class="p">);</span>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;La fecha es :&#39;</span><span class="p">,</span> <span class="nx">fecha</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Salida o resultado del console.log es: <code>La fecha es : 07-07-2017</code></p>
+
+<h4>Sumar segundos a una fecha</h4>
+
+<p>En esta función nos permite sumar segundos a una fecha, la función recibe dos parametros, el primero es un objeto de tipo fecha y el segundo parámetro es la cantidad de segundos, y esta nos retorna un nuevo objeto de tipo fecha con el resultado de la suma de los segundos a la fecha original.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">function</span> <span class="nx">sumarSegundos</span><span class="p">(</span><span class="nx">fecha</span><span class="p">,</span>  <span class="nx">segundos</span> <span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">fechaNueva</span><span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">fecha</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">fechaNueva</span><span class="p">.</span><span class="nx">setSeconds</span><span class="p">(</span><span class="nx">fechaNueva</span><span class="p">.</span><span class="nx">getSeconds</span><span class="p">()</span> <span class="o">+</span> <span class="nx">segundos</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">return</span> <span class="nx">fechaNueva</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>También podemos sumar <em>minutos</em>, <em>horas</em>, <em>días</em>, etc. haciendo la debida conversión y la forma de usar es así:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">miFecha</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span> <span class="c1">//Fecha original: 2017-07-07T23:30:51.607Z</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">segundos</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">minutos</span> <span class="o">=</span> <span class="mi">7</span><span class="o">*</span><span class="mi">60</span><span class="p">;</span>
+</span><span class='line'><span class="nx">sumarSegundos</span><span class="p">(</span><span class="nx">segundos</span><span class="p">);</span> <span class="c1">//Resultado: 2017-07-07T23:31:21.607Z</span>
+</span><span class='line'><span class="nx">sumarSegundos</span><span class="p">(</span><span class="nx">minutos</span><span class="p">);</span> <span class="c1">//Resultado: 2017-07-07T23:37:51.607Z</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong><em>Próximamente seguiré actualizando este post añadiendo más funciones útiles.</em></strong></p>
+
+<p>No te olvides de compartir y dejar tus comentarios, si quieres saber de algún tema más específico puedes dejarlo en los comentarios.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Instalar Node en Raspberry Pi]]></title>
     <link href="http://jacquez.info/blog/2017/06/30/instalar-node-en-raspberry-pi/"/>
-    <updated>2017-06-30T01:02:01-06:00</updated>
+    <updated>2017-06-30T02:02:01-05:00</updated>
     <id>http://jacquez.info/blog/2017/06/30/instalar-node-en-raspberry-pi</id>
     <content type="html"><![CDATA[<p>Hola, en este post explico como instalar correctamente <strong>NodeJS</strong> correctamente en un raspberry pi, con sistema operativo de la familia debian(raspbian), lo que debemos hacer es seguir estos sencillos pasos:</p>
 
@@ -79,7 +156,7 @@
   <entry>
     <title type="html"><![CDATA[Configuración De SSH Para Conexiones Remotas]]></title>
     <link href="http://jacquez.info/blog/2017/04/06/configuracion-de-ssh-para-conexiones-remotas/"/>
-    <updated>2017-04-06T02:51:30-06:00</updated>
+    <updated>2017-04-06T03:51:30-05:00</updated>
     <id>http://jacquez.info/blog/2017/04/06/configuracion-de-ssh-para-conexiones-remotas</id>
     <content type="html"><![CDATA[<p>En este punto ya debemos de tener instalado <strong>ssh</strong> en nuestro servidor.</p>
 

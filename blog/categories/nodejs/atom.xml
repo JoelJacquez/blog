@@ -4,7 +4,7 @@
   <title><![CDATA[Categoría: Nodejs | Joel Jacquez]]></title>
   <link href="http://jacquez.info/blog/categories/nodejs/atom.xml" rel="self"/>
   <link href="http://jacquez.info/"/>
-  <updated>2017-07-03T12:59:49-06:00</updated>
+  <updated>2017-07-07T18:59:11-05:00</updated>
   <id>http://jacquez.info/</id>
   <author>
     <name><![CDATA[Joel Jacquez]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Instalar Node en Raspberry Pi]]></title>
     <link href="http://jacquez.info/blog/2017/06/30/instalar-node-en-raspberry-pi/"/>
-    <updated>2017-06-30T01:02:01-06:00</updated>
+    <updated>2017-06-30T02:02:01-05:00</updated>
     <id>http://jacquez.info/blog/2017/06/30/instalar-node-en-raspberry-pi</id>
     <content type="html"><![CDATA[<p>Hola, en este post explico como instalar correctamente <strong>NodeJS</strong> correctamente en un raspberry pi, con sistema operativo de la familia debian(raspbian), lo que debemos hacer es seguir estos sencillos pasos:</p>
 

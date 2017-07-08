@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Categoría: Javascript | Joel Jacquez]]></title>
+  <link href="http://jacquez.info/blog/categories/javascript/atom.xml" rel="self"/>
+  <link href="http://jacquez.info/"/>
+  <updated>2017-07-07T18:59:11-05:00</updated>
+  <id>http://jacquez.info/</id>
+  <author>
+    <name><![CDATA[Joel Jacquez]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Funciones Prácticas Con Fechas]]></title>
+    <link href="http://jacquez.info/blog/2017/07/07/funciones-practicas-con-fechas/"/>
+    <updated>2017-07-07T17:26:45-05:00</updated>
+    <id>http://jacquez.info/blog/2017/07/07/funciones-practicas-con-fechas</id>
+    <content type="html"><![CDATA[<p>Hola en este post les mostraré un par de funciones en <em>JavaScript</em> que uso con frecuencia para el manejo de fechas.</p>
+
+<h4>Fecha con formato</h4>
+
+<p>La primera función es para regresar una fecha con formato de  <code>dd-mm-yyyy</code> (<em>día-mes-año</em>), esta función recibe como parámetro un objeto de tipo <em>Date</em> y regresa un string con la fecha formateada.</p>
+
+<pre><code class="js">function fechaConFormato(fecha) {
+  var dd = fecha.getDate();
+  var mm = fecha.getMonth() + 1;
+  var yy = fecha.getFullYear();
+  return (dd&gt;9? dd:'0'+dd)+'-'+(mm&gt;9? mm:'0'+mm)+'-'+yy;
+}
+</code></pre>
+
+<p>La forma de usar esta función sería de la siguiente forma:</p>
+
+<pre><code class="js">var miFecha = new Date();
+var fecha = fechaConFormato(miFecha);
+console.log('La fecha es :', fecha);
+</code></pre>
+
+<p>Salida o resultado del console.log es: <code>La fecha es : 07-07-2017</code></p>
+
+<h4>Sumar segundos a una fecha</h4>
+
+<p>En esta función nos permite sumar segundos a una fecha, la función recibe dos parametros, el primero es un objeto de tipo fecha y el segundo parámetro es la cantidad de segundos, y esta nos retorna un nuevo objeto de tipo fecha con el resultado de la suma de los segundos a la fecha original.</p>
+
+<pre><code class="js">function sumarSegundos(fecha,  segundos ) {
+  var fechaNueva= new Date(fecha);
+  fechaNueva.setSeconds(fechaNueva.getSeconds() + segundos);
+  return fechaNueva;
+}
+</code></pre>
+
+<p>También podemos sumar <em>minutos</em>, <em>horas</em>, <em>días</em>, etc. haciendo la debida conversión y la forma de usar es así:</p>
+
+<pre><code class="js">var miFecha = new Date(); //Fecha original: 2017-07-07T23:30:51.607Z
+var segundos = 30;
+var minutos = 7*60;
+sumarSegundos(segundos); //Resultado: 2017-07-07T23:31:21.607Z
+sumarSegundos(minutos); //Resultado: 2017-07-07T23:37:51.607Z
+</code></pre>
+
+<p><strong><em>Próximamente seguiré actualizando este post añadiendo más funciones útiles.</em></strong></p>
+
+<p>No te olvides de compartir y dejar tus comentarios, si quieres saber de algún tema más específico puedes dejarlo en los comentarios.</p>
+]]></content>
+  </entry>
+  
+</feed>
