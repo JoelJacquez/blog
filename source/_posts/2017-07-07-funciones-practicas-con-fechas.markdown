@@ -7,7 +7,7 @@ categories: JavaScript
 tags: [JavaScript, js, fechas, utilidades, operaciones con fechas]
 ---
 Hola en este post les mostraré un par de funciones en *JavaScript* que uso con frecuencia para el manejo de fechas.
-
+<!--more-->
 #### Fecha con formato
 
 La primera función es para regresar una fecha con formato de  `dd-mm-yyyy` (*día-mes-año*), esta función recibe como parámetro un objeto de tipo *Date* y regresa un string con la fecha formateada.
