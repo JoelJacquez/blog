@@ -4,7 +4,7 @@
   <title><![CDATA[Categoría: Javascript | Joel Jacquez]]></title>
   <link href="http://jacquez.info/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://jacquez.info/"/>
-  <updated>2017-07-08T23:00:08-05:00</updated>
+  <updated>2017-07-08T23:56:40-05:00</updated>
   <id>http://jacquez.info/</id>
   <author>
     <name><![CDATA[Joel Jacquez]]></name>
@@ -19,6 +19,9 @@
     <updated>2017-07-07T17:26:45-05:00</updated>
     <id>http://jacquez.info/blog/2017/07/07/funciones-practicas-con-fechas</id>
     <content type="html"><![CDATA[<p>Hola en este post les mostraré un par de funciones en <em>JavaScript</em> que uso con frecuencia para el manejo de fechas.</p>
+
+<!--more-->
+
 
 <h4>Fecha con formato</h4>
 
